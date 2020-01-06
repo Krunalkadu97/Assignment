@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="about-area">
+{% for i in lst1 %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <h3> Degree:   {{i.name}}<br> </h3>
+	          <h4>College:   {{i.colleg}}<br></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h5 class="text-uppercase pt-5">
+                            <span>Branch:   {{i.speci}}</span>
+                            
+                        </h5>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                                      Start-Date:{{i.s_date}}<br>
+			End-Date:{{i.e_date}}<br>
+			Percentage/CGPA:{{i.marks}}<br>
+                            </p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+{% endfor %}
+        </section>
+
+
+
+{% endblock %}

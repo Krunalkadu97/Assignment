@@ -1,0 +1,211 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Krunal Kadu."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style1.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<title>{% block title %}Krunal Kadu - Curriculum Vitae{% endblock %}</title>
+<script src="https://kit.fontawesome.com/89b04a7971.js" crossorigin="anonymous"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+{% for i in lst %}
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{{i.photo.url}}" alt="Person Photo" />
+		</div>
+		{% for j in ls %}
+		<div id="name">
+				
+			<h1 class="quickFade delayTwo">{{j.name}}</h1>
+			<h2 class="quickFade delayThree">{{j.title}}</h2>
+				
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li><i class="fas fa-envelope"></i> <a href="mailto:krunalkadu97@gmail.com" target="_blank"> &nbsp;{{j.mail}}</a></li>
+				<li><i class="fab fa-github-alt"></i>   <a href="https://github.com/Krunalkadu97/project">&nbsp; {{j.f_url}}</a></li>
+				<li><i class="fas fa-mobile-alt"></i> &nbsp;  {{j.phone}}</li>
+			</ul>
+		</div>
+		{% endfor %}
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1><i class="fas fa-address-card"></i> Professional Summary</h1>
+				</div>
+				{% for i in lst %}
+				<div class="sectionContent">
+					<p>{{i.intro}}</p>
+				</div>
+				{% endfor %}
+			</article>
+			<div class="clear"></div>
+		</section>
+	{% endfor %}	
+		
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-chalkboard-teacher"></i> Work History</h1>
+			</div>
+			{% for i in lst2 %}
+			<div class="sectionContent">
+				<article>
+					<h2>{{i.post}}</h2>
+					<p class="subDetails">{{i.s_date}} - {{i.e_date}}</p>
+					<p>{{i.name_o}}</p>
+				</article>
+				
+				
+			</div>
+			{% endfor %}
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-pencil-alt"></i> Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					{% for i in lst4 %}
+				<li>{{i.name}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-puzzle-piece"></i> Professional Experience.</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					{% for i in lst5 %}
+					<h2>{{i.title}}</h2>
+					<p class="subDetails">{{i.s_date}}-{{i.e_date}}</p>
+					<p >{{i.intro}}</p>
+					<p class="subDetails">Role in Project:{{i.role}}</p>
+					<p class="subDetails">Technology Used:{{i.skills}}</p>
+					<p class="subDetails">Database Used:{{i.d_b}}</p>
+					<p class="subDetails">IDEs Used:{{i.ides}}</p><hr><br>
+					{% endfor %}
+				</article>
+				
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-user-graduate"></i> Education</h1>
+			</div>
+			{% for i in lst1 %}
+			<div class="sectionContent">
+				<article>
+					<h2>{{i.name}}-{{i.speci}}</h2>
+					<p>{{i.colleg}} &nbsp; &nbsp; &nbsp; &nbsp; ( {{i.s_date}}-{{i.e_date}} ) </p>
+					<p class="subDetails">Percentage/CGPA:&nbsp; {{i.marks}}</p>
+
+				</article>
+			</div>
+			{% endfor %}
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-trophy"></i> Achivement</h1>
+			</div>
+			{% for i in lst3 %}
+			<div class="sectionContent">
+				<article>
+					<h2>{{i.name_a}}&nbsp;&nbsp;( {{i.a_date}}) </h2>
+					
+					<p class="subDetails">Description:&nbsp; {{i.desc}}</p>
+
+				</article>
+			</div>
+			{% endfor %}
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-book-reader"></i> Intrests</h1>
+			</div>
+			{% for i in lst6 %}
+			<div class="sectionContent">
+				<article>
+					<h2>{{i.name}} </h2>
+
+				</article>
+			</div>
+			{% endfor %}
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1><i class="fas fa-file-signature"></i> Declaration</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h4>I hereby declare that all the information given above is true to my best of knowledge.
+
+</h4><br>
+				{% for i in ls %}
+				
+				<h4>Yours Faithfully</h4>
+				<h4>{{i.name}}</h4>
+				
+				{% endfor %}
+
+				</article>
+			</div>
+			
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+<section class="site-banner">
+         
+<div class="container">
+<button type="button" class="btn button secondary-button text-uppercase"><a href="/download">Download</a></button>
+</div>
+</section>
+{% endblock %}

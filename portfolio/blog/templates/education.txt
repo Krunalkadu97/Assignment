@@ -1,0 +1,160 @@
+<section class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">My Skills..</h1>
+                        <p class="para">
+                            Following are my skills. In which i have made projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s1.png" alt="Services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Web development</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s2.png" alt="Services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Python</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s3.png" alt="Services-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Django</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s4.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">REST-API</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <!--  ======================== About Me Area ==============================  -->
+
+<section class="about-area">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="about-title">
+                            <h1 class="text-uppercase title-h1">Client Say about me</h1>
+                            <p class="para">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
+                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container carousel py-lg-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="media/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="media/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="media/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="media/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./static/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="media/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mac Hill</h4>
+                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section
+

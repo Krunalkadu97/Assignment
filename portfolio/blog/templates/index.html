@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+   
+    <main class="site-main">
+<!--start intro-->
+<section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+						{% for i in ls %}
+                        <h1 class="title-text text-uppercase">{{i.name}}</h1>
+                        <h4 class="title-text text-uppercase">{{i.title}}</h4>
+						{% endfor %}
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase"><a href="/subscribe">hire me</a></button>
+                                <button type="button" class="btn button secondary-button text-uppercase"><a href="/resume">Get cv</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="media/img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--end intro-->
+
+<section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="media/img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                    
+	         {% for i in lst %}
+		
+		
+			<h2 class="text-uppercase pt-5">
+                            
+			<label>Introduction</Label><br>
+			{{i.about_me}}
+			
+			
+                 	                  		</h2>
+			
+			                   
+                            <img src="{{i.photo.url}}" alt="img2" class="img-fluid"  width=200 height=150 />
+                        
+                				
+                            <p class="para">
+                               {{i.intro}}
+		
+                            </p>
+		</h2>
+                        </div>
+
+	         {% endfor %}
+	         
+	      
+                        
+                        <button type="button" class="btn button primary-button text-uppercase"><a href="/resume">Download cv</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  ======================== Brand Area ==============================  -->
+
+        <section class="brand-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="first-row row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo1.png" alt="Brand-1 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo2.png" alt="Brand-2 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo3.png" alt="Brand-3 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo4.png" alt="Brand-4">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo5.png" alt="Brand-5 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo6.png" alt="Brand-6">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo7.png" alt="Brand-7 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo8.png" alt="Brand-8 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="media/img/brands/logo9.png" alt="Brand-9">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="experience-area">
+                            <div class="d-flex flex-row years-area">
+                                <h2 class="p-3 years">Fresher</h2>
+                                <h2>
+                                    <span>Less than Years</span>
+                                    <span>Experience</span>
+                                    <span>Working</span>
+                                </h2>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap call-area">
+                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+                                <div class="call-now">
+                                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
+                                    <span class="font-roboto py-2">(+91)-8308082945</span>
+                                </div>
+                            </div>
+                            <div class="bg-panel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================== End Brand Area ==============================  -->
+
+        <!--  ====================== Start Services Area =============================  -->
+
+        <section class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">My Skills</h1>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s1.png" alt="Services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Front End Technology</h5>
+                                    <p class="card-text text-secondary">
+                                        <div class="container">
+  			<h6>HTML</h6>
+  			<div class="progress">
+    		<div class="progress-bar" style="width:70%">70%</div>
+  		</div>
+		</div>
+ 			<div class="container">
+  			<h6>CSS</h6>
+			<div class="progress">
+  			<div class="progress-bar bg-success" style="width:70%">70%</div>
+			</div>
+			</div>	
+			<div class="container">
+  			<h6>JS</h6>
+			<div class="progress">
+  			<div class="progress-bar bg-info" style="width:60%">60%</div>
+			</div>
+			</div>									
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s2.png" alt="Services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Coding and Scripting Language</h5>
+                                    <p class="card-text text-secondary">
+                                       <div class="container">
+  			<h4>Core-Python</h4>
+			<div class="progress">
+  			<div class="progress-bar bg-success" style="width:60%">60%</div>
+			</div>
+			</div>	
+			<h4>Adv-Python</h4>
+			<div class="progress">
+  			<div class="progress-bar bg-warning" style="width:60%">60%</div>
+			</div>
+			</div>	
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s3.png" alt="Services-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Frame-Work</h5>
+                                    <p class="card-text text-secondary">
+                                       <div class="container">
+  			<h4>Core-Python</h4>
+			<div class="progress">
+  			<div class="progress-bar bg-success" style="width:60%">60%</div>
+			</div>
+			</div>	
+			
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="media/img/services/s4.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">API</h5>
+                                    <p class="card-text text-secondary">
+                                        
+  			<h4>REST-API</h4>
+			<div class="progress">
+  			<div class="progress-bar bg-success" style="width:60%">60%</div>
+			</div>
+			
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!--Subscribe-->
+       <section class="subscribe-us-area">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-uppercase">Get Update From anywhere</h4>
+                        <p class="para">Please Fill the Following Details.</p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50" name='form' action='' method='post'>
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col input-textbox">
+                                {% csrf_token %}
+	             {{form.as_p}}
+                            </div>
+                            <div class="col">
+                                <div class="btn-submit">
+                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        
+    </main>
+    {% endblock %}
