@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from blog.views import about,index,home,project,resume,education,service,blog,subscribe,thankyou
+from blog.views import render_to_pdf,ViewPDF,about,index,home,project,resume,education,service,blog,subscribe,thankyou
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index),
@@ -31,4 +32,6 @@ urlpatterns = [
     path('thankyou',thankyou),
     path('blog',blog),
     path('resume',resume),
+    path('ViewPDF/', ViewPDF, name="pdf_view"),
+    path('render_to_pdf/', render_to_pdf, name="pdf_download"),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -3,51 +3,6 @@
 {% block content %}
 <!--start intro-->
 
-<section class="about-area">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
-                            <img src="media/img/about-us.png" alt="About us" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 about-title">
-                    
-	         
-		{% for i in lst %}
-		
-			<h2 class="text-uppercase pt-5">
-                            
-			<label>Introduction</Label><br>
-			{{i.about_me}}
-			
-			
-                 	                  		</h2>
-			
-			                   
-                            <img src="{{i.photo.url}}" alt="img2" class="img-fluid"  width=200 height=150 />
-                        
-                				
-                            <p class="para">
-                               {{i.intro}}
-		
-                            </p>
-		</h2>
-                        </div>
-
-	         {% endfor %}
-	         
-	      
-                        
-                        <button type="button" class="btn button primary-button text-uppercase"><a href="/resume">Download cv</a></button>
-                    </div>
-                </div>
-            </div>
-			
-        </section>
-		
-<!--end intro-->
 
 <section class="about-area">
             <div class="container-fluid">
@@ -78,9 +33,10 @@
 	         
 	      
                         
-                        <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                        <button type="button" class="btn button primary-button text-uppercase"><a href="/resume">Download cv</a></button>
                     </div>
                 </div>
             </div>
         </section>
+	
 {% endblock %}

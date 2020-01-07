@@ -1,4 +1,7 @@
+{% load crispy_forms_tags %}
+
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +32,10 @@
 
     <!--  Responsive css file  -->
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<!--  Responsive Bootstrap file  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </head>
 
@@ -78,6 +85,30 @@
     <!--  ======================= Start Main Area ================================ -->
     <main class="site-main">
 
+<!--start intro-->
+<section class="site-banner"   style="background-image: url({% static 'img/banner/home-banner.png' %});">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+						{% for i in ls %}
+                        <h1 class="title-text text-uppercase">{{i.name}}</h1>
+                        <h4 class="title-text text-uppercase">{{i.title}}</h4>
+						{% endfor %}
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase"><a href="/subscribe">hire me</a></button>
+                                <button type="button" class="btn button secondary-button text-uppercase"><a href="/resume">Get cv</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="media/img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--end intro-->
         {% block content %}{% endblock %}
 
         
@@ -86,16 +117,15 @@
     <!--  ======================= End Main Area ================================ -->
 
     <footer class="footer-area">
-        <div class="container">
+        <div class="container" style="background-image: url({% static 'img/footer-bg.png' %});">
             <div class="">
                 <div class="site-logo text-center py-4">
                     <a href="#"><img src="media/banner/1.png" alt="logo"></a>
                 </div>
                 <div class="social text-center">
                     <h5 class="text-uppercase">Follow me</h5>
-                    <a href="https://www.facebook.com/krunal.kadu.37?ref=bookmarks"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/a_companionate_person/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/krunal-kadu-996a3912b/"><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
                 </div>
                 
             </div>
